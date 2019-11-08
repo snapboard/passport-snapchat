@@ -254,15 +254,6 @@ function getGraphFieldForNormalizedFieldName(field: string): string {
 /**
  * @hidden
  */
-function normalizeScope(scope: string): string {
-  return scope.startsWith('https:')
-    ? scope
-    : config.OAUTH_SCOPE_URL_PREFIX + scope;
-}
-
-/**
- * @hidden
- */
 function normalizeOptions(
   options: any = {},
 ): Required<SnapchatStrategyOptions> {
