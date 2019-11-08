@@ -280,7 +280,7 @@ function normalizeOptions(
       .map(getGraphFieldForNormalizedFieldName)
       .filter(Boolean),
     profileURL: options.profileURL || `${config.SNAP_KIT_API_URL}/me`,
-    scope: scopes.map(normalizeScope).filter(Boolean),
+    scope: scopes,
     scopeSeparator,
     tokenURL: options.tokenURL || config.SNAP_ACCOUNTS_TOKEN_URL,
   };
